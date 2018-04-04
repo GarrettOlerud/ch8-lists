@@ -1,29 +1,29 @@
 # Exercise 1: creating and accessing lists
 
 # Create a vector `my_breakfast` of everything you ate for breakfast
-
+my_breakfast <- c("cereal", "milk")
 
 # Create a vector `my_lunch` of everything you ate (or will eat) for lunch
 
-
+my_lunch <- c("cup_noodles", "water")
 # Create a list `meals` that has contains your breakfast and lunch
 
-
+meals <- list(lunch = my_lunch,breakfast = my_breakfast)
 # Add a "dinner" element to your `meals` list that has what you plan to eat 
 # for dinner
 
-
+meals$dinner <- c("pasta")
 # Use dollar notation to extract your `dinner` element from your list
 # and save it in a vector called 'dinner'
 
-
+three_meals$list_dinner
 # Use double-bracket notation to extract your `lunch` element from your list
 # and save it in your list as the element at index 5 (no reason beyond practice)
-
+meals[[5]] <- my_lunch
 
 # Use single-bracket notation to extract your breakfast and lunch from your list
 # and save them to a list called `early_meals`
-
+early_meals <- meals[1:2]
 
 
 ### Challenge ###
@@ -34,7 +34,9 @@
 
 # Write a function `add_pizza` that adds pizza to a given meal vector, and
 # returns the pizza-fied vector
-
+add_piza <- function(meals) {
+  meals <- c(meal, "pizza")
+}
 
 # Create a vector `better_meals` that is all your meals, but with pizza!
 
